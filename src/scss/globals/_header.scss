@@ -1,0 +1,17 @@
+.main-header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  @media all and (min-width: 768px) {
+    height: 90px;
+  }
+  &__logo {
+    display: block;
+    height: 56px;
+    width: 165px;
+    background-image: url("../../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

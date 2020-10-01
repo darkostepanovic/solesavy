@@ -1,0 +1,85 @@
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  @media all and (min-width: 1024px) {
+    flex-direction: row;
+    min-height: calc(100vh - 90px);
+    justify-content: space-between;
+  }
+  &__content {
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    @media all and (min-width: 768px) {
+      margin-top: 75px;
+      margin-bottom: 45px;
+    }
+    @media all and (min-width: 1024px) {
+      margin-top: 115px;
+      margin-bottom: 0;
+    }
+    @media all and (min-width: 1280px) {
+      margin-top: 140px;
+    }
+  }
+  &__video {
+    flex: 1;
+    background-image: url("../../images/newsletter/phones-mobile.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 560px;
+    @media all and (min-width: 768px) {
+      background-size: contain;
+    }
+    @media all and (min-width: 1024px) {
+      background-image: url("../../images/newsletter/phones.png");
+    }
+  }
+  &__form-wrapper {
+    margin-bottom: 40px;
+    @media all and (min-width: 768px) {
+      margin-bottom: 45px;
+    }
+    @media all and (min-width: 1024px) {
+      margin-bottom: 67px;
+    }
+    @media all and (min-width: 1280px) {
+      margin-bottom: 142px;
+    }
+    h1 {
+      font-family: map-get($fontFaces, 'primary-bold');
+      font-size: map-get($fontSizes, '2xl');
+      margin-bottom: 18px;
+      @media all and (min-width: 768px) {
+        font-size: map-get($fontSizes, '4xl');
+        margin-bottom: 16px;
+      }
+      @media all and (min-width: 1024px) {
+        font-size: map-get($fontSizes, '3xl');
+        margin-bottom: 23px;
+      }
+      @media all and (min-width: 1280px) {
+        font-size: map-get($fontSizes, '4xl');
+        margin-bottom: 16px;
+      }
+    }
+
+    p {
+      font-family: map-get($fontFaces, 'primary');
+      font-size: map-get($fontSizes, 'regular');
+      margin-bottom: 33px;
+      @media all and (min-width: 768px) {
+        font-size: map-get($fontSizes, 'lg');
+        margin-bottom: 38px;
+      }
+    }
+
+    form {
+      min-height: 60px;
+      background: red;
+      @media all and (min-width: 768px) {
+        max-width: 400px;
+      }
+    }
+  }
+}

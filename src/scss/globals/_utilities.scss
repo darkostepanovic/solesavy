@@ -1,0 +1,40 @@
+/*
+|--------------------------------------------------------------------------
+| CSS font utilities
+|--------------------------------------------------------------------------
+*/
+
+@each $fontName, $fontValue in $fontFaces {
+  @font-face {
+    font-family: $fontValue;;
+    src: url($fontValue);
+    src: local('#{$font-global-path}/#{$fontValue}.woff2'), local($fontValue),
+    url('#{$font-global-path}/#{$fontValue}.eot?#iefix') format('embedded-opentype'),
+    url('#{$font-global-path}/#{$fontValue}.woff2') format('woff2'),
+    url('#{$font-global-path}/#{$fontValue}.woff') format('woff'),
+    url('#{$font-global-path}/#{$fontValue}.ttf') format('truetype'),
+    url('#{$font-global-path}/#{$fontValue}.svg##{$fontValue}') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  .text-font-face-#{$fontName} {
+    font-family: $fontValue !important;
+  }
+}
+
+.container {
+  padding: 0 22px;
+  overflow: hidden;
+  @media all and (min-width: 768px) {
+    padding: 0 58px;
+  }
+  @media all and (min-width: 1024px) {
+    width: 850px;
+    padding: 0;
+    margin: 0 auto;
+  }
+  @media all and (min-width: 1280px) {
+    width: 1150px;
+  }
+}

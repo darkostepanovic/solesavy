@@ -29,12 +29,12 @@
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 560px;
-    background-position: 0 180px;
     @media all and (min-width: 768px) {
       background-size: contain;
     }
     @media all and (min-width: 1024px) {
       background-image: url("../../images/newsletter/phones.png");
+      background-position: 0 180px;
     }
   }
   &__form-wrapper {
@@ -97,7 +97,7 @@
     }
     ._form_element {
       margin-bottom: 0!important;
-      flex: 0 0 260px!important;
+      flex: 0 0 65%!important;
     }
     ._field-wrapper {
       height: 100%!important;
@@ -123,6 +123,23 @@
       text-align: left!important;
       font-family: map-get($fontFaces, 'primary')!important;
       font-size: map-get($fontSizes, 'regular')!important;
+    }
+  }
+  &__list {
+    a {
+      display: block;
+      font-size: map-get($fontSizes, 'xl');
+      font-family: map-get($fontFaces, 'primary-bold');
+      position: relative;
+      margin-top: 32px;
+      &:after {
+        content: '';
+        position: absolute;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: map-get($colors, 'primary');
+      }
     }
   }
 }

@@ -20,6 +20,7 @@
     }
     @media all and (min-width: 1280px) {
       margin-top: 140px;
+      margin-bottom: 100px;
     }
   }
   &__video {
@@ -28,6 +29,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     min-height: 560px;
+    background-position: 0 180px;
     @media all and (min-width: 768px) {
       background-size: contain;
     }
@@ -73,13 +75,54 @@
         margin-bottom: 38px;
       }
     }
-
-    form {
-      min-height: 60px;
-      background: red;
-      @media all and (min-width: 768px) {
-        max-width: 400px;
+  }
+  &__form {
+    input {
+      border-radius: 0!important;
+    }
+    ._form {
+      padding: 0!important;
+      margin: 0!important;
+    }
+    ._form-label {
+      display: none!important;
+    }
+    ._form-content {
+      width: 100%!important;
+      display: flex;
+      height: 60px;
+    }
+    ._form-branding, ._clear-element {
+      display: none!important;
+    }
+    ._form_element {
+      margin-bottom: 0!important;
+      flex: 0 0 260px!important;
+    }
+    ._field-wrapper {
+      height: 100%!important;
+      input {
+        background-color: map-get($greyscale, 'regular');
+        color: #000!important;
+        height: 100%!important;
+        border: none!important;
+        font-size: map-get($fontSizes, 'regular')!important;
+        font-family: map-get($fontFaces, 'primary')!important;
+        padding: 0 23px!important;
+        &::placeholder {
+          color: #000!important;
+        }
       }
+    }
+    ._submit {
+      height: 100%;
+      width: 100%;
+      font-size: map-get($fontSizes, 'regular')!important;
+    }
+    ._form-thank-you {
+      text-align: left!important;
+      font-family: map-get($fontFaces, 'primary')!important;
+      font-size: map-get($fontSizes, 'regular')!important;
     }
   }
 }

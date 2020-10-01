@@ -28,13 +28,26 @@
     background-image: url("../../images/newsletter/phones-mobile.png");
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 560px;
+    display: none;
     @media all and (min-width: 768px) {
       background-size: contain;
     }
     @media all and (min-width: 1024px) {
+      display: block;
       background-image: url("../../images/newsletter/phones.png");
       background-position: 0 180px;
+    }
+    &--mobile {
+      display: block;
+      height: 350px;
+      background-position: left;
+      @media all and (min-width: 768px) {
+        background-position: left;
+        height: 560px;
+      }
+      @media all and (min-width: 1024px) {
+        display: none;
+      }
     }
   }
   &__form-wrapper {

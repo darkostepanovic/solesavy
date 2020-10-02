@@ -24,15 +24,16 @@ module.exports = {
     output: {
         publicPath: "/"
     },
+    devtool: "source-map",
     module: {
         rules: [
             {
                 test: /\.scss$/,
                 use: [ 
                     MiniCssExtractPlugin.loader, 
-                    { loader : 'css-loader', options: { url: false, importLoaders: 1 } },
-                    { loader: 'postcss-loader', options: { postcssOptions: { plugins: [ autoprefixer(), cssnano() ]}}},
-                    { loader: 'sass-loader?sourceMap' }
+                    { loader : 'css-loader', options: { sourceMap: true, url: false, importLoaders: 1 } },
+                    { loader: 'postcss-loader', options: { sourceMap: true, postcssOptions: { sourceMap: true, plugins: [ autoprefixer(), cssnano() ]}}},
+                    { loader: 'sass-loader', options: { sourceMap: true }}
                 ]
             },
             {

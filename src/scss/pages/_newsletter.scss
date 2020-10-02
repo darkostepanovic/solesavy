@@ -96,6 +96,10 @@
     ._form {
       padding: 0!important;
       margin: 0!important;
+      width: 100%!important;
+      @media all and (min-width: 768px) {
+        width: 400px!important;
+      }
     }
     ._form-label {
       display: none!important;

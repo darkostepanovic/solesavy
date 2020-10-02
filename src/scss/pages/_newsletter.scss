@@ -155,4 +155,7 @@
       }
     }
   }
+  &__drawer {
+    @include el-drawer;
+  }
 }

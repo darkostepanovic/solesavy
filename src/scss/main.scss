@@ -1,8 +1,11 @@
 @import "globals/variables";
 @import "globals/utilities";
 @import "globals/globals";
+@import "globals/mixins";
 
 @import "globals/header";
+
+// ELEMENTS
 
 // PAGES
 @import "pages/newsletter";

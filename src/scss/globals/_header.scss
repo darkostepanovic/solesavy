@@ -7,11 +7,15 @@
   }
   &__logo {
     display: block;
-    height: 56px;
-    width: 165px;
+    height: 30px;
+    width: 80px;
     background-image: url("../../images/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    @media all and (min-width: 768px) {
+      height: 40px;
+      width: 110px;
+    }
   }
 }

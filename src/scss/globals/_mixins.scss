@@ -4,7 +4,7 @@
   position: fixed;
   top: 0;
   right: -100%;
-  background-color: map-get($greyscale, 'light');
+  background-color: #fff;
   transition: all 0.3s ease;
   z-index: 9;
   overflow-y: auto;

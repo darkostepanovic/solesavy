@@ -35,7 +35,7 @@
     }
     @media all and (min-width: 1024px) {
       display: block;
-      background-image: url("../../images/newsletter/phones.png");
+      background-image: none;
       background-position: 0 180px;
     }
     &--mobile {
@@ -180,7 +180,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: map-get($greyscale, 'light');
+    background-color: #fff;
     transition: all 0.5s ease;
 
     @media all and (min-width: 768px) {
@@ -223,13 +223,13 @@
     .mobile-content {
       display: block;
       margin: 0 auto;
-      @media all and (min-width: 1024px) {
+      @media all and (min-width: 768px) {
         display: none;
       }
     }
     .desktop-content {
       display: none;
-      @media all and (min-width: 1024px) {
+      @media all and (min-width: 768px) {
         display: block;
       }
     }

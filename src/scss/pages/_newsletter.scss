@@ -24,6 +24,21 @@
       padding-right: 50px;
     }
   }
+  &__message {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: map-get($colors, 'primary');
+    padding: 0 23px;
+    @media all and (min-width: 768px) {
+      max-width: 400px;
+    }
+    > * {
+      margin-bottom: 0;
+      font-size: map-get($fontSizes, 'regular');
+    }
+  }
   &__video {
     flex: 1;
     background-image: url("../../images/newsletter/phones-mobile.png");

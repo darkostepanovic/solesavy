@@ -159,6 +159,11 @@
     }
   }
   &__list {
+    p {
+      text-indent: -24px;
+      padding-left: 30px;
+      margin-bottom: 10px;
+    }
     a {
       display: block;
       font-size: map-get($fontSizes, 'xl');

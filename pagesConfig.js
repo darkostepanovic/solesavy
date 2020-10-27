@@ -1,3 +1,4 @@
 module.exports = [
-    'thank-you'
+    'thank-you',
+    'confirmed'
 ]

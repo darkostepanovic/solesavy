@@ -39,6 +39,21 @@
       font-size: map-get($fontSizes, 'regular');
     }
   }
+    &__message-green {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #338a03;
+    padding: 0 23px;
+    @media all and (min-width: 768px) {
+      max-width: 400px;
+    }
+    > * {
+      margin-bottom: 0;
+      font-size: map-get($fontSizes, 'regular');
+    }
+  }
   &__video {
     flex: 1;
     background-image: url("../../images/newsletter/phones-mobile.png");
